@@ -1,0 +1,47 @@
+.background-container {
+    width: 100%;
+    padding: 1rem;
+    background-color: #444;; /* or any other color you prefer */
+    padding: 96px;
+}
+
+.education-container, .work-container {
+    padding: 1rem;
+    position: relative; /* for the pseudo-elements positioning */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #fff; /* adjust the color to match the design */
+    margin: 0; /* adjust as necessary */
+    font-weight: normal; /* or 'bold', depending on the design */
+    text-transform: uppercase; /* if the title needs to be uppercase */
+}
+
+.span-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem; /* space between the title and the university details */
+}
+
+.span-container span {
+    font-size: 1rem;
+    color: #fff; /* a lighter grey for the university details */
+}
+
+.span-container span:not(:last-child):after {
+    content: '|';
+    margin: 0 10px; /* space around the separator */
+    color: #FFA500; /* a color for the separator */
+}
+
+/* Add a full-width grey line below the education and work details */
+.education-container::after, .work-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem; /* position below the container */
+    width: 100%;
+    height: 1px;
+    background-color: #FFA500; /* grey line color */
+}

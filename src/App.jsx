@@ -10,8 +10,8 @@ const App = () =>{
       <Navbar/>
       <div className="container">
         <Hero></Hero>
-        <Background></Background>
       </div>
+      <Background></Background>
     </>
   );
 };

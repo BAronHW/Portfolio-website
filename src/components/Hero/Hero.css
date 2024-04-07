@@ -11,6 +11,8 @@
     align-items: center;
     position: relative;
     flex-direction: column;
+    margin: 0 ;
+    padding: 96px;
 }
 
 .hero-img{
