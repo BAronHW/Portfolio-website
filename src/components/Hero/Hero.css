@@ -1,0 +1,23 @@
+.hero-img img{
+    width: 100px;
+}
+
+#duck-icon{
+    width: 700px;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.hero-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-content{
+    padding: 10rem;
+}
