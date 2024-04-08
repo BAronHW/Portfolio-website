@@ -1,7 +1,7 @@
 .background-container {
     width: 100%;
     padding: 1rem;
-    background-color: #0A192F;
+    /* background-color: #0A192F; */
     padding: 96px;
 }
 
@@ -29,6 +29,10 @@ h2 {
     color: #fff;
 }
 
+.top-work-exp-span-container span{
+    font-weight: 700;
+}
+
 .span-container span:not(:last-child):after {
     content: '|';
     margin: 0 10px; 
@@ -46,7 +50,7 @@ h2 {
 }
 
 .background-container {
-    background-color: #0A192F; 
+    /* background-color: #060417;  */
     color: white; 
 }
 
@@ -59,20 +63,16 @@ h2 {
 
 .work-container {
     display: grid;
-    grid-template-columns: minmax(auto, max-content) 1fr; /* This sets the first column width to fit the content size and the second one to take the rest of the space */
-    gap: 4rem; /* Adjusts the gap between grid items */
-    align-items: start; /* Aligns items to the start of the grid area */
+    grid-template-columns: minmax(auto, max-content) 1fr;
+    gap: 4rem;
+    align-items: start;
     padding: 2rem;
-    /* Other styles */
 }
-  
   .work-container h2 {
     
     border-bottom: 2px solid #FFA500;
     padding-bottom: 0.5rem;
-    /* margin-bottom: 2rem; */
-    /* font-size: 2rem; */
-    color: #fff; /* Change as per your color scheme */
+    color: #fff;
   }
 
   .work-right-container{
@@ -84,23 +84,9 @@ h2 {
     margin-bottom: 2rem;
   }
   
-  .work-exp-title {
-    color: #000; /* Change as per your color scheme */
+  .job-descrption-div{
+    margin-top: 1rem;
   }
   
-  .work-exp-company {
-    font-size: 1.2rem;
-    color: #666;
-  }
   
-  .work-exp-duration {
-    font-size: 1rem;
-    color: #666;
-    margin: 0.5rem 0;
-  }
-  
-  .work-exp-description {
-    font-size: 1rem;
-    color: #333;
-  }
   

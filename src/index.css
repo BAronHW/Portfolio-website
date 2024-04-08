@@ -8,8 +8,10 @@
 
 body{
   color: #fff;
-  background-color: #060417;
+  /* background-color: #060417; */
+  background: linear-gradient(34deg, #441273, #051e4b 21%, #344f8d 58%, #6a89df 80%, #91e3e2 99%);
 }
+
 
 button{
   text-decoration: none;
@@ -18,4 +20,21 @@ button{
 a{
   color: #fff;
   text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width of the scrollbar */
+  background-color: gainsboro; /* Makes the scrollbar track transparent */
+}
+
+/* Styles the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Gives the scrollbar a light, semi-transparent white color */
+  border-radius: 6px; /* Rounds the corners of the scrollbar thumb */
+  border: 3px solid transparent; /* Creates padding around scroll thumb */
+  background-clip: padding-box; /* Ensures the border doesn't overlap the background color */
+}
+
+/* Hover styles for the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0); /* Darkens the handle a bit on hover for better visibility */
 }

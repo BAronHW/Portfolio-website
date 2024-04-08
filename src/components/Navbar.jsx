@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png'
 import MobileNav from './MobileNav/MobileNav';
 
 
-const Navbar = ({scrollToWork}) => {
+const Navbar = ({onHomeClick, onWorkClick}) => {
 
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -21,13 +21,13 @@ const Navbar = ({scrollToWork}) => {
 
             <ul>
                 <li>
-                    <a className='menu-item' href="">Home</a>
+                    <a className='menu-item' onClick={onHomeClick}>Home</a>
                 </li>
                 <li>
                     <a className='menu-item' href="">Skills</a>
                 </li>
                 <li>
-                    <a className='menu-item' onClick={scrollToWork}>Work Experience</a>
+                    <a className='menu-item' onClick={onWorkClick}>Work Experience</a>
                 </li>
                 <li>
                     <a className='menu-item' href="">Contact Me</a>

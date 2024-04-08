@@ -2,17 +2,27 @@ import React, { useRef } from 'react';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/Hero";
 import Background from "./components/Background/Background";
+import Title from "./components/Title/Title"
 
 const App = () => {
   const workRef = useRef(null);
+  const homeRef = useRef(null);
+  const contactRef = useRef(null);
+  const skillRef = useRef(null);
 
-  const scrollToWork = () => {
-    workRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToRef = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth',
+    });
   };
 
+  
   return (
     <>
-      <Navbar scrollToWork={scrollToWork} />
+      <Navbar onHomeClick={() => scrollToRef(homeRef)} 
+              onWorkClick={() => scrollToRef(workRef)}/>
+      <Title homeRef={homeRef}></Title>
       <div className="container">
         <Hero />
       </div>
