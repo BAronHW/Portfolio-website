@@ -9,7 +9,6 @@ const Background = ({workRef}) => {
             <h2>EDUCATION</h2>
             <div className='span-container'>
                 <span>Lancaster University</span>
-                {/* <span>|</span> */}
                 <span>2019</span>
             </div>
             
@@ -28,7 +27,7 @@ const Background = ({workRef}) => {
                     <span>Aug 2022 - Sep 2022</span>
                     <div className='job-descrption-div'>
                       <p>Collaborated with colleagues, providing general assistance and support in various tasks to allow for a
-                       smooth long-term expansion into a multi-million-dollar deal within the new Beijing Market.Conducted comprehensive customer research to gain valuable insights into prospective clients, facilitating enhanced preparation for client meetings and engagements.</p>
+                       smooth long-term expansion into a multi-million-dollar deal within the new Beijing Market. Conducted comprehensive customer research to gain valuable insights into prospective clients, facilitating enhanced preparation for client meetings and engagements.</p>
                     </div>
                     
                   </div>
@@ -42,7 +41,7 @@ const Background = ({workRef}) => {
                     <span> | </span>
                     <span>Mar 2019 - Jan 2021</span>
                     <div className='job-descrption-div'>
-                      <p> actively participated in a summer program that supports teachers at an educational centre in delivering a STEM summer course for primary school children. My primary responsibilities involved guiding children in fundamental subjects such as mathematics, English, and critical thinking. Additionally, I played a crucial role in assisting children with their project work, fostering their development within the STEM curriculum</p>
+                      <p> Actively participated in a summer program that supports teachers at an educational centre in delivering a STEM summer course for primary school children. My primary responsibilities involved guiding children in fundamental subjects such as mathematics, English, and critical thinking. Additionally, I played a crucial role in assisting children with their project work, fostering their development within the STEM curriculum</p>
                     </div>
                   </div>
                 </div>

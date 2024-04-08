@@ -7,8 +7,10 @@ import Title from "./components/Title/Title"
 const App = () => {
   const workRef = useRef(null);
   const homeRef = useRef(null);
+  const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const skillRef = useRef(null);
+  
 
   const scrollToRef = (ref) => {
     window.scrollTo({
@@ -21,12 +23,13 @@ const App = () => {
   return (
     <>
       <Navbar onHomeClick={() => scrollToRef(homeRef)} 
-              onWorkClick={() => scrollToRef(workRef)}/>
+              onWorkClick={() => scrollToRef(workRef)}
+              onAboutClick={() => scrollToRef(aboutRef)}
+      />
       <Title homeRef={homeRef}></Title>
       <div className="container">
-        <Hero />
+        <Hero aboutRef={aboutRef}/>
       </div>
-      {/* Assign the ref to the Background component */}
       <Background workRef={workRef} />
     </>
   );
