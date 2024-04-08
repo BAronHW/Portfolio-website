@@ -12,7 +12,7 @@
     position: relative;
     flex-direction: column;
     margin: 0 ;
-    padding: 15vh 40vh 20vh;
+    padding: 15vh 0 20vh;
 }
 
 .hero-img{

@@ -6,7 +6,7 @@
 }
 
 .education-container, .work-container {
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
 }
 
@@ -51,9 +51,56 @@ h2 {
 }
 
 .education-container h2, .work-container h2 {
-    
     border-bottom: 2px solid #FFA500;
     display: inline-block; 
     margin-bottom: 8px;
     padding-bottom: 5px;
 }
+
+.work-container {
+    display: grid;
+    grid-template-columns: minmax(auto, max-content) 1fr; /* This sets the first column width to fit the content size and the second one to take the rest of the space */
+    gap: 4rem; /* Adjusts the gap between grid items */
+    align-items: start; /* Aligns items to the start of the grid area */
+    padding: 2rem;
+    /* Other styles */
+}
+  
+  .work-container h2 {
+    
+    border-bottom: 2px solid #FFA500;
+    padding-bottom: 0.5rem;
+    /* margin-bottom: 2rem; */
+    /* font-size: 2rem; */
+    color: #fff; /* Change as per your color scheme */
+  }
+
+  .work-right-container{
+    grid-column: 2 / 3;
+
+    margin-bottom: 1rem;
+  }
+  .work-experience {
+    margin-bottom: 2rem;
+  }
+  
+  .work-exp-title {
+    color: #000; /* Change as per your color scheme */
+  }
+  
+  .work-exp-company {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .work-exp-duration {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .work-exp-description {
+    font-size: 1rem;
+    color: #333;
+  }
+  

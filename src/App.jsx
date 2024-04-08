@@ -4,10 +4,8 @@ import Hero from "./components/Hero/Hero";
 import Background from "./components/Background/Background";
 
 const App = () => {
-  // Create a ref to the work section
   const workRef = useRef(null);
 
-  // Function to handle scrolling
   const scrollToWork = () => {
     workRef.current.scrollIntoView({ behavior: 'smooth' });
   };

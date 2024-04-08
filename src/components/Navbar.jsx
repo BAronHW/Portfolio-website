@@ -17,7 +17,7 @@ const Navbar = ({scrollToWork}) => {
     <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}></MobileNav>
     <nav className='nav-wrapper'>
         <div className='nav-content'>
-            <img className='logo' src={logo} alt="LOGO" />
+            <h1 className='logo'>Aaron Wan</h1>
 
             <ul>
                 <li>
@@ -32,7 +32,6 @@ const Navbar = ({scrollToWork}) => {
                 <li>
                     <a className='menu-item' href="">Contact Me</a>
                 </li>
-                <button className='contact-btn' onClick={()=>{}}>Hire Me</button>
             </ul>
 
             <button className='menu-btn' onClick={toggleMenu}>
