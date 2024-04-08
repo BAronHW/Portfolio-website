@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react';
 import './Navbar.css'
 import logo from '../assets/images/logo.png'
 import MobileNav from './MobileNav/MobileNav';
 
 
-const Navbar = () => {
+const Navbar = ({scrollToWork}) => {
 
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <a className='menu-item' href="">Skills</a>
                 </li>
                 <li>
-                    <a className='menu-item' href="">Work Experience</a>
+                    <a className='menu-item' onClick={scrollToWork}>Work Experience</a>
                 </li>
                 <li>
                     <a className='menu-item' href="">Contact Me</a>
