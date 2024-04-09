@@ -41,3 +41,32 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 425px){
+
+    .hero-container{
+        padding: 0;
+    }
+    .hero-content{
+        padding: 0;
+    }
+}
+
+@media (max-width: 769px){
+    .hero-container{
+        padding: 0;
+    }
+    .hero-content p{
+        /* display: flex; */
+        padding: 0;
+    }
+}
+
+@media (max-width: 1325px){
+    .hero-container{
+        padding: 0;
+    }
+    .hero-content{
+        padding: 0;
+    }
+}

@@ -9,6 +9,10 @@
     padding: 2rem;
     position: relative;
 }
+.education-container{
+    display: flex;
+    gap: 4rem;
+}
 
 h2 {
     font-size: 1.5rem;

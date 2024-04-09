@@ -2,7 +2,9 @@ import React, { useRef } from 'react';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/Hero";
 import Background from "./components/Background/Background";
-import Title from "./components/Title/Title"
+import Title from "./components/Title/Title";
+import Design from './components/Design/Design';
+import Projects from './components/Projects/Projects';
 
 const App = () => {
   const workRef = useRef(null);
@@ -18,10 +20,10 @@ const App = () => {
       behavior: 'smooth',
     });
   };
-
   
   return (
     <>
+      <Design></Design>
       <Navbar onHomeClick={() => scrollToRef(homeRef)} 
               onWorkClick={() => scrollToRef(workRef)}
               onAboutClick={() => scrollToRef(aboutRef)}
@@ -31,6 +33,7 @@ const App = () => {
         <Hero aboutRef={aboutRef}/>
       </div>
       <Background workRef={workRef} />
+      <Projects></Projects>
     </>
   );
 };
