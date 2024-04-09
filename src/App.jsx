@@ -29,7 +29,7 @@ const App = () => {
               onWorkClick={() => scrollToRef(workRef)}
               onAboutClick={() => scrollToRef(aboutRef)}
       />
-      <Title homeRef={homeRef}></Title>
+      <Title homeRef={homeRef} aboutRef={aboutRef}></Title>
       <div className="container">
         <Hero aboutRef={aboutRef}/>
       </div>

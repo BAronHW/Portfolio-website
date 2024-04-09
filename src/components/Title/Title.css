@@ -23,3 +23,11 @@
     font-size: 1vw;
     font-style: italic;
   }
+
+  .down-arrow{
+    margin-top: 10rem;
+  }
+
+  .down-arrow:hover{
+    cursor: pointer;
+  }
