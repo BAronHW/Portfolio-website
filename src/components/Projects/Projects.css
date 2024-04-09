@@ -1,0 +1,22 @@
+.project-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.inner-container{
+    border: solid;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: #FFA500;
+}
+
+img{
+    border-radius: 97px;
+    overflow: hidden;
+}

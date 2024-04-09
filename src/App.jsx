@@ -5,6 +5,7 @@ import Background from "./components/Background/Background";
 import Title from "./components/Title/Title";
 import Design from './components/Design/Design';
 import Projects from './components/Projects/Projects';
+import duck from './assets/images/duck.png'
 
 const App = () => {
   const workRef = useRef(null);
@@ -33,7 +34,10 @@ const App = () => {
         <Hero aboutRef={aboutRef}/>
       </div>
       <Background workRef={workRef} />
-      <Projects></Projects>
+      <div className='project-container'>
+        <Projects projectImg={duck} projectTitle={"Duck"} projectDesc={"Its just a duck bro"}></Projects>
+        <Projects projectImg={duck} projectTitle={"Duck"} projectDesc={"Another Duck"}></Projects>
+      </div>
     </>
   );
 };
