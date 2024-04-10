@@ -6,7 +6,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 10rem;
 }
+
+
 
 @media (max-width: 1300px){
     .container{

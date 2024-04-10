@@ -19,10 +19,16 @@
 .hero-img{
     display: flex;
     flex-direction: row;
+    gap: calc(100vw/20);
 }
 
 .hero-content{
+    display: flex;
+    flex-direction: column;
     padding: 10rem;
+}
+h2{
+    display: flex;
 }
 
 .tech-tools-container{
@@ -34,6 +40,10 @@
     justify-content: flex-start;
     gap: 5rem;
     
+}
+
+p{
+    display: flex;
 }
 
 .tech-icon{

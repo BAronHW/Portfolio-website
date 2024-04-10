@@ -1,22 +1,57 @@
-.project-card-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: transparent;
-}
-
-.inner-container{
-    border: solid;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-color: #FFA500;
-}
-
-img{
-    border-radius: 97px;
+.project-card-container {
+    width: 300px;
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 20px; /* Rounded corners for the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 20px; 
     overflow: hidden;
-}
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    box-shadow: rgb(147, 14, 224) 0px 20px 30px -10px;
+  }
+  
+  .project-card-container:hover {
+    transform: scale(1.07,1.07);
+    box-shadow: rgb(147, 14, 224) 0px 20px 30px 10px;
+  }
+  
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-card-top {
+    width: 100%;
+  }
+  
+  .project-title-name, .project-desc {
+    color: #ffffff; 
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .project-desc {
+    font-size: 0.9rem;
+  }
+  
+  .project-card-bottom {
+    padding: 15px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .project-title-name, .project-desc{
+    color: rgba(0, 0, 0, .8);
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }

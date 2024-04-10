@@ -4,7 +4,7 @@ import './Background.css'
 const Background = ({workRef}) => {
   return (
     <>
-    <div className='background-container'>
+    <div className='background-container' ref={workRef}>
         <div className='education-container'>
             <h2>EDUCATION</h2>
             <div className='span-container'>
@@ -13,7 +13,7 @@ const Background = ({workRef}) => {
             </div>
             
         </div>
-        <div className='work-container' ref={workRef}>
+        <div className='work-container' >
           <div className='work-div'>
           <h2>WORK</h2>
           </div>

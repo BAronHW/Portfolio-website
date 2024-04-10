@@ -5,14 +5,20 @@ import Background from "./components/Background/Background";
 import Title from "./components/Title/Title";
 import Design from './components/Design/Design';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 import duck from './assets/images/duck.png'
+import genetic from './assets/images/genetic1.png'
+import library from './assets/images/Library.png'
+import port from './assets/images/port.png'
+import network from './assets/images/network.png'
+import './App.css'
 
 const App = () => {
   const workRef = useRef(null);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
-  const skillRef = useRef(null);
+  const projectRef = useRef(null);
   
 
   const scrollToRef = (ref) => {
@@ -28,16 +34,23 @@ const App = () => {
       <Navbar onHomeClick={() => scrollToRef(homeRef)} 
               onWorkClick={() => scrollToRef(workRef)}
               onAboutClick={() => scrollToRef(aboutRef)}
+              onProjectClick={() => scrollToRef(projectRef)}
+              onContactClick={() => scrollToRef(contactRef)}
       />
       <Title homeRef={homeRef} aboutRef={aboutRef}></Title>
-      <div className="container">
+      <div className="hero-wrapper">
         <Hero aboutRef={aboutRef}/>
       </div>
       <Background workRef={workRef} />
-      <div className='project-container'>
-        <Projects projectImg={duck} projectTitle={"Duck"} projectDesc={"Its just a duck bro"}></Projects>
-        <Projects projectImg={duck} projectTitle={"Duck"} projectDesc={"Another Duck"}></Projects>
+      <div className='project-container' ref={projectRef}>
+        <Projects projectImg={genetic} projectTitle={"Genetic Algorithm Pathfinding"} projectDesc={""}></Projects>
+        <Projects projectImg={library} projectTitle={"Home Library Application"} projectDesc={""}></Projects>
+        <Projects projectImg={port} projectTitle={"Portfolio Website"} projectDesc={""}></Projects>
+        <Projects projectImg={network} projectTitle={"Re-creatng Ping and Traceroute"} projectDesc={""}></Projects>
+        
       </div>
+      <Contact contactRef={contactRef}></Contact>
+      <footer className='footer'>© Copyright 2024 Aaron Wan</footer>
     </>
   );
 };

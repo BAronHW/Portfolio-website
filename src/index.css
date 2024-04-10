@@ -44,3 +44,12 @@ a{
   justify-content: center;
   gap: 1rem;
 }
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 20px;
+  padding: 2rem;
+}
