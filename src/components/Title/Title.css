@@ -30,4 +30,8 @@
 
   .down-arrow:hover{
     cursor: pointer;
+    transform: translateY(0.5rem);
+  }
+  .down-arrow{
+    transition: transform 250ms;
   }
