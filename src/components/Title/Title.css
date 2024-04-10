@@ -32,6 +32,16 @@
     cursor: pointer;
     transform: translateY(0.5rem);
   }
-  .down-arrow{
+  svg{
     transition: transform 250ms;
   }
+
+  .linkedin-icon:hover{
+    fill: rgb(0, 98, 255);
+    transform: scale(1.1,1.1);
+}
+
+.github-icon:hover{
+  fill:#000000;
+  transform: scale(1.1,1.1);
+}
