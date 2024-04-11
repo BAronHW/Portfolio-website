@@ -96,6 +96,10 @@ svg{
     transform: scale(1.1,1.1);
 }
 
+.header-about{
+    font-size: 3rem;
+}
+
 
 
 @media (max-width: 425px){

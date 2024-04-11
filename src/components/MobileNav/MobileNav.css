@@ -25,7 +25,7 @@
     transform: translateX(0);
 }
 
-.mobile-menu img{
+.mobile-menu .Logo{
     margin-bottom: 3rem;
     width: 150px;
 }
