@@ -79,7 +79,7 @@ const Design = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 20,
                     },
                     opacity: {
                         value: 0.5,

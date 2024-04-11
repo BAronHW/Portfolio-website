@@ -26,6 +26,8 @@
     display: flex;
     flex-direction: column;
     padding: 10rem;
+    align-items: center;
+    gap: 2rem;
 }
 h2{
     display: flex;
@@ -38,8 +40,12 @@ h2{
     padding: 0 160px 0;
     align-items: center;
     justify-content: flex-start;
-    gap: 5rem;
+    gap: 2rem;
     
+}
+
+.tech-header{
+    display: flex;;
 }
 
 p{
@@ -99,6 +105,17 @@ svg{
     }
     .hero-content{
         padding: 0;
+    }
+
+    svg{
+        max-width: 10px;
+        max-height: 60px;
+    }
+    .tech-tools-container{
+        padding: 0;
+    }
+    .hero-img{
+        gap: 0;
     }
 }
 

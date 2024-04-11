@@ -43,13 +43,18 @@ const App = () => {
       </div>
       <Background workRef={workRef} />
       <div className='project-container' ref={projectRef}>
-        <Projects projectImg={genetic} projectTitle={"Genetic Algorithm Pathfinding"} projectDesc={""}></Projects>
-        <Projects projectImg={library} projectTitle={"Home Library Application"} projectDesc={""}></Projects>
-        <Projects projectImg={port} projectTitle={"Portfolio Website"} projectDesc={""}></Projects>
-        <Projects projectImg={network} projectTitle={"Re-creatng Ping and Traceroute"} projectDesc={""}></Projects>
-        
+        <h2 className='portfolio-h2'>Portfolio</h2>
+        <div className='project-cards-container'>
+          <Projects projectImg={genetic} projectTitle={"Genetic Algorithm Pathfinding"} projectDesc={""}></Projects>
+          <Projects projectImg={library} projectTitle={"Home Library Application"} projectDesc={""}></Projects>
+          <Projects projectImg={port} projectTitle={"Portfolio Website"} projectDesc={""}></Projects>
+          <Projects projectImg={network} projectTitle={"Re-creatng Ping and Traceroute"} projectDesc={""}></Projects>
+        </div>
       </div>
-      <Contact contactRef={contactRef}></Contact>
+      <div className='contact-container'>
+        <Contact contactRef={contactRef}></Contact>
+      </div>
+      
       <footer className='footer'>© Copyright 2024 Aaron Wan</footer>
     </>
   );
