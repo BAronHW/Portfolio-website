@@ -46,7 +46,7 @@ h2 {
     right: 0;
     bottom: 10px; /* Adjust this value as needed to position the underline */
     height: 2px; /* Thickness of the underline */
-    background-image: linear-gradient(to right, #FFD700, #FF6347, #1E90FF); /* Example gradient colors */
+    background: linear-gradient(45deg, #e100ff, #f5aa95, #fad0c4);
     display: block;
 }
 
@@ -78,6 +78,44 @@ svg {
 .react-icon:hover, .html-icon:hover, .css-icon:hover, .js-icon:hover,
 .node-icon:hover, .java-icon:hover, .figma-icon:hover {
     transform: scale(1.1);
+}
+
+svg{
+    transition: 250ms;
+}
+
+.react-icon:hover{
+    fill:#ADD8E6;
+    transform: scale(1.1,1.1);
+}
+
+.html-icon:hover{
+    fill:#F14A29;
+    transform: scale(1.1,1.1);
+}
+
+.css-icon:hover{
+    fill: rgba(59, 130, 246, .5);
+    transform: scale(1.1,1.1);
+}
+
+.js-icon:hover{
+    fill: rgb(255, 230, 0);
+    transform: scale(1.1,1.1);
+}
+
+.node-icon:hover{
+    fill: rgb(145, 255, 0);
+    transform: scale(1.1,1.1);
+}
+
+.java-icon:hover{
+    fill:#F14A29;
+    transform: scale(1.1,1.1);
+}
+.figma-icon:hover{
+    fill:#a91deb;
+    transform: scale(1.1,1.1);
 }
 
 
