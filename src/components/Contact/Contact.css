@@ -1,20 +1,51 @@
-.contact-container{
+.contact-container {
     width: 100%;
     height: 100%;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    z-index: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Make sure this is appropriately set if you use stacking contexts */
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 6vh;
+    font-size: 2em; /* Using 'em' for scalability and consistency */
 }
 
-.email{
+.email {
     font-style: italic;
+    color: #ffffff; /* Ensuring text color is set for readability */
+}
+
+.contact-text {
+    background: linear-gradient(45deg, #e100ff, #f5aa95, #fad0c4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+/* Additional styles for links and icons */
+.links a {
+    margin: 0 10px; /* Spacing between links */
+    display: inline-block; /* To align with SVG icons properly */
+}
+
+.linkedin-icon,
+.github-icon {
+    fill: #FFFFFF; /* Icon color */
+    transition: transform 0.3s; /* Smooth scale effect on hover */
+}
+
+.links a:hover .linkedin-icon,
+.links a:hover .github-icon {
+    transform: scale(1.1); /* Slightly increase size on hover for better interactivity */
 }

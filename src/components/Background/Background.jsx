@@ -9,7 +9,7 @@ const Background = ({workRef}) => {
             <h2>EDUCATION</h2>
             <div className='span-container'>
                 <span>Lancaster University</span>
-                <span>2019</span>
+                <span>2021</span>
             </div>
             
         </div>

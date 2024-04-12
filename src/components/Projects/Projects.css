@@ -1,57 +1,79 @@
 .project-card-container {
-    width: 300px;
-    background-color: #ffffff; /* White background for the card */
-    border-radius: 20px; /* Rounded corners for the card */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    margin: 20px; 
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    z-index: 1;
-    box-shadow: rgb(147, 14, 224) 0px 20px 30px -10px;
-  }
-  
-  .project-card-container:hover {
-    transform: scale(1.07,1.07);
-    box-shadow: rgb(147, 14, 224) 0px 20px 30px 10px;
-  }
-  
-  .inner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .project-card-top {
-    width: 100%;
-  }
-  
-  .project-title-name, .project-desc {
-    color: #ffffff; 
-    text-align: center;
-    margin: 10px 0;
-  }
-  
-  .project-desc {
-    font-size: 0.9rem;
-  }
-  
-  .project-card-bottom {
-    padding: 15px;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .project-title-name, .project-desc{
-    color: rgba(0, 0, 0, .8);
-  }
+  width: 300px;
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 20px; /* Rounded corners for the card */
+  margin: 20px;
+  overflow: hidden; /* Ensures nothing spills outside the card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and shadow */
+  box-shadow: rgb(147, 14, 224) 0px 20px 30px -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensures the positioning context for absolute children */
+  z-index: 1;
+}
 
-  .contact-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.project-card-container:hover {
+  transform: scale(1.07); /* Uniform scale for simplicity */
+  box-shadow: rgb(147, 14, 224) 0px 20px 30px 10px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ensures it fills the parent container */
+}
+
+.project-card-top img {
+  width: 100%; /* Ensures the image covers the entire card width */
+  display: block; /* Removes bottom space/margin */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.project-card-bottom {
+  display: flex; /* Changed to flex to better control the alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Full coverage of the parent container */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  opacity: 0; /* Start with hidden state */
+  transition: opacity 0.3s ease-in-out; /* Transition for opacity to smooth the visibility change */
+}
+
+.project-card-bottom.show {
+  display: flex; /* Ensure it stays as flex when shown */
+  opacity: 1; /* Visible state */
+}
+
+.project-title-name, .project-desc {
+  color: #ffffff; /* Use consistent color format */
+  text-align: center;
+  margin: 10px 0;
+  transform: scale(0.5); /* Initial scaled down text */
+  opacity: 0; /* Initially hidden */
+  animation: scaleText 0.5s ease-out forwards; /* Animation for scaling the text */
+}
+
+@keyframes scaleText {
+  0% {
+    transform: scale(0.5); /* Start smaller */
+    opacity: 0;
   }
+  100% {
+    transform: scale(1); /* Scale up to normal size */
+    opacity: 1;
+  }
+}
+
+.project-desc {
+  font-size: 0.9rem;
+}

@@ -68,3 +68,9 @@ a{
 .portfolio-h2{
   font-size: 5rem;
 }
+
+@media (max-width: 425px){
+  .project-cards-container{
+    flex-direction: column;
+  }
+}
