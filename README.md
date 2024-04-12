@@ -28,13 +28,4 @@ The current version of the website is optimized for desktop viewing only. It is 
 
 - **Mobile Support**: Making the website responsive to support various screen sizes, particularly mobile devices and tablets.
 - **Accessibility Enhancements**: Improving the website's accessibility to ensure it is usable by people with disabilities.
-- **Performance Optimization**: Enhancing the site's performance for faster load times and a smoother user experience.
-
-## Local Development
-
-If you wish to run the project locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/BAronHW/Portfolio-website
 
