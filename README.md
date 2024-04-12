@@ -4,7 +4,7 @@ Welcome to the repository for my personal portfolio website. This website showca
 
 ## Website Link
 
-You can view the live website here: [Portfolio Website]https://661957079ac87f076c7681d2--sparkling-lily-8b7abb.netlify.app/
+You can view the live website here: [Portfolio Website](https://661957079ac87f076c7681d2--sparkling-lily-8b7abb.netlify.app/)
 
 ## Technology Stack
 
