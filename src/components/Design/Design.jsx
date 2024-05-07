@@ -57,13 +57,6 @@ const Design = () => {
                     color: {
                         value: "#ffffff",
                     },
-                    links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
                     move: {
                         direction: "none",
                         enable: true,
@@ -71,7 +64,7 @@ const Design = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
