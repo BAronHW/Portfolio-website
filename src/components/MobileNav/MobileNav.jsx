@@ -2,7 +2,7 @@ import React from 'react'
 import './MobileNav.css'
 import logo from '../../assets/images/logo.png';
 
-const MobileNav = ({isOpen, toggleMenu}) => {
+const MobileNav = ({isOpen, toggleMenu, onHomeClick, onWorkClick, onAboutClick, onProjectClick, onContactClick}) => {
   return (
     <>
     <div className={`mobile-menu ${isOpen ? "active" : ""}`} 
@@ -14,16 +14,16 @@ const MobileNav = ({isOpen, toggleMenu}) => {
 
             <ul>
                 <li>
-                    <a className="menu-item" href="">Home</a>
+                    <a className="menu-item" onClick={onAboutClick}>About</a>
                 </li>
                 <li>
-                    <a className='menu-item' href="">Skills</a>
+                    <a className='menu-item' onClick={onProjectClick}>Projects</a>
                 </li>
                 <li>
-                    <a className='menu-item' href="">Work Experience</a>
+                    <a className='menu-item' onClick={onWorkClick}>Work Experience</a>
                 </li>
                 <li>
-                    <a className='menu-item' href="">Contact Me</a>
+                    <a className='menu-item' onClick={onContactClick}>Contact Me</a>
                 </li>
             </ul>
         </div>

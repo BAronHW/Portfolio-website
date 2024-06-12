@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: transparent;
     z-index: 1;
+    flex-direction: column;
 }
 
 .inner-container{
@@ -21,3 +22,4 @@ img{
     border-radius: 97px;
     overflow: hidden;
 }
+

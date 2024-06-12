@@ -14,7 +14,7 @@ const Navbar = ({onHomeClick, onWorkClick, onAboutClick, onProjectClick, onConta
 
   return (
     <>
-    <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}></MobileNav>
+    {/* <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}></MobileNav> */}
     <nav className='nav-wrapper'>
         <div className='nav-content'>
             <h1 className='logo'>Aaron Wan</h1>
@@ -37,11 +37,11 @@ const Navbar = ({onHomeClick, onWorkClick, onAboutClick, onProjectClick, onConta
                 </li>
             </ul>
 
-            <button className='menu-btn' onClick={toggleMenu}>
+            {/* <button className='menu-btn' onClick={toggleMenu}>
              <span class={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
                 {openMenu ? "close" : "menu"}
              </span>
-            </button>
+            </button> */}
             
         </div>
     </nav>

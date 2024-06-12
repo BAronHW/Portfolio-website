@@ -31,12 +31,14 @@
 
 h2 {
     display: flex;
+    margin-bottom: 2rem; /* Add margin to create a gap below the title */
 }
 
 .header-about {
     font-size: 3rem;
     position: relative;
     display: inline-block;  /* Ensures the pseudo-element aligns correctly under the text */
+    margin-top: 3rem; /* Add margin to create a gap above the about section */
 }
 
 .header-about::after {
@@ -50,15 +52,15 @@ h2 {
     display: block;
 }
 
-
 .tech-tools-container {
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0 160px;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Gap between items */
+    padding: 2rem;
+    max-width: 1200px; /* Ensure it doesn't stick out */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tech-header, p {
@@ -78,10 +80,6 @@ svg {
 .react-icon:hover, .html-icon:hover, .css-icon:hover, .js-icon:hover,
 .node-icon:hover, .java-icon:hover, .figma-icon:hover {
     transform: scale(1.1);
-}
-
-svg{
-    transition: 250ms;
 }
 
 .react-icon:hover{
@@ -113,40 +111,96 @@ svg{
     fill:#F14A29;
     transform: scale(1.1,1.1);
 }
+
 .figma-icon:hover{
     fill:#a91deb;
     transform: scale(1.1,1.1);
 }
 
-
-
-@media (max-width: 425px) {
-    .hero-container, .hero-content, .tech-tools-container {
-        padding: 0;
-    }
-
-    svg {
-        max-width: 10px;
-        max-height: 60px;
-    }
-
-    .hero-img {
-        gap: 0;
+/* Media Queries for responsiveness */
+@media (max-width: 1325px) {
+    .hero-container, .hero-content {
+        padding: 5rem 0;
     }
 }
 
 @media (max-width: 769px) {
     .hero-container, .hero-content {
-        padding: 0;
+        padding: 3rem 0;
     }
 
     .hero-content p {
         padding: 0;
     }
+
+    .header-about {
+        font-size: 2.5rem;
+        margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+
+    h2 {
+        margin-bottom: 1.5rem; /* Adjust margin for smaller screens */
+    }
+
+    .tech-tools-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .hero-img{
+        gap: 0.5rem;
+    }
+
+    .tech-icon {
+        max-width: 100px;
+        text-align: center;
+    }
 }
 
-@media (max-width: 1325px) {
-    .hero-container, .hero-content {
-        padding: 0;
+@media (max-width: 425px) {
+    .hero-container, .hero-content, .tech-tools-container {
+        padding: 1rem 0;
+    }
+
+    .hero-content {
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .header-about {
+        font-size: 2rem;
+        margin-top: 1.5rem; /* Adjust margin for smaller screens */
+    }
+
+    h2 {
+        margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    .hero-img img, #duck-icon {
+        width: 80px; /* Adjust as needed for smaller screens */
+    }
+
+    svg {
+        max-width: 30px; /* Adjust the icon sizes for smaller screens */
+        max-height: 30px;
+    }
+
+    .hero-img {
+        gap: 0.5;
+    }
+
+    .tech-tools-container {
+        padding: 1rem;
+        gap: 1rem;
+        max-width: 100%; /* Ensure it doesn't stick out */
+    }
+
+    .tech-icon {
+        max-width: 80px;
+        text-align: center;
+    }
+
+    .tech-icon p{
+        display: none;
     }
 }

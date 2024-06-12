@@ -11,6 +11,7 @@
   align-items: center;
   position: relative; /* Ensures the positioning context for absolute children */
   z-index: 1;
+  flex-direction: column;
 }
 
 .project-card-container:hover {
@@ -76,4 +77,66 @@
 
 .project-desc {
   font-size: 0.9rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .project-card-container {
+    width: 250px;
+    margin: 15px;
+    flex-direction: column;
+  }
+
+  .project-desc {
+    font-size: 0.8rem;
+  }
+
+  .project-container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card-container {
+    width: 200px;
+    margin: 10px;
+    flex-direction: column;
+    
+  }
+
+  .project-desc {
+    font-size: 0.75rem;
+  }
+  .project-container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card-container {
+    width: 150px;
+    margin: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+  }
+
+  .inner-container {
+    padding: 10px;
+  }
+
+  .project-title-name {
+    font-size: 1rem;
+  }
+
+  .project-desc {
+    font-size: 0.7rem;
+  }
+
+  .project-card-bottom {
+    padding: 10px;
+  }
+
+  .project-container{
+    flex-direction: column;
+  }
 }

@@ -1,50 +1,95 @@
 .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20rem 0 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rem 0 20rem;
 }
 
 .name-occupation{
-    display: flex;
-    flex-direction: column;
-    /* gap: 0.5rem; */
+  display: flex;
+  flex-direction: column;
 }
+
 .name{
-    font-weight: 900;
-    font-size: 5vw;
+  font-weight: 900;
+  font-size: 5vw;
 }
+
 .occupation{
-    font-style: italic;
-    font-size: 1vw;
+  font-style: italic;
+  font-size: 1vw;
 }
+
 .university {
-    color: #441273;
-    font-size: 1vw;
-    font-style: italic;
-  }
+  color: #441273;
+  font-size: 1vw;
+  font-style: italic;
+}
 
-  .down-arrow{
-    margin-top: 10rem;
-  }
+.down-arrow{
+  margin-top: 10rem;
+}
 
-  .down-arrow:hover{
-    cursor: pointer;
-    transform: translateY(0.5rem);
-  }
-  svg{
-    transition: transform 250ms;
-  }
+.down-arrow:hover{
+  cursor: pointer;
+  transform: translateY(0.5rem);
+}
 
-  .linkedin-icon:hover{
-    fill: rgb(0, 98, 255);
-    transform: scale(1.1,1.1);
+svg{
+  transition: transform 250ms;
+}
+
+.linkedin-icon:hover{
+  fill: rgb(0, 98, 255);
+  transform: scale(1.1,1.1);
 }
 
 .github-icon:hover{
-  fill:#000000;
+  fill: #000000;
   transform: scale(1.1,1.1);
 }
 
 
+@media (max-width: 768px) {
+  .container{
+      padding: 10rem 0 10rem;
+  }
 
+  .name{
+      font-size: 10vw;
+  }
+
+  .occupation{
+      font-size: 4vw;
+  }
+
+  .university {
+      font-size: 4vw;
+  }
+
+  .down-arrow{
+      margin-top: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+      padding: 5rem 0 5rem;
+  }
+
+  .name{
+      font-size: 12vw; 
+  }
+
+  .occupation{
+      font-size: 5vw; 
+  }
+
+  .university {
+      font-size: 5vw;
+  }
+
+  .down-arrow{
+      margin-top: 2rem;
+  }
+}

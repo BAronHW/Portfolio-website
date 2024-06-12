@@ -7,7 +7,7 @@ import reactlogo from '../../assets/images/React-icon.png'
 import duckicon from '../../assets/images/duck.png'
 
 const Hero = ({aboutRef}) => {
-  return (
+    return (
     <section className='hero-container' ref={aboutRef}>
         <div className='hero-content' >
             <h2 className='header-about'>A bit about me</h2>
