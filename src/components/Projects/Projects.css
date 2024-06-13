@@ -79,8 +79,12 @@
   font-size: 0.9rem;
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 1024px) {
+  .project-cards-container{
+    flex-direction: column;
+  }
+
   .project-card-container {
     width: 250px;
     margin: 15px;
@@ -101,7 +105,10 @@
     width: 200px;
     margin: 10px;
     flex-direction: column;
-    
+  }
+
+  .project-cards-container{
+    flex-direction: column;
   }
 
   .project-desc {

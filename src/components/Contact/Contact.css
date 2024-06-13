@@ -49,3 +49,69 @@
 .links a:hover .github-icon {
     transform: scale(1.1); /* Slightly increase size on hover for better interactivity */
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .contact-container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .contact-text {
+        font-size: 2.5rem;
+    }
+
+    .header {
+        font-size: 1.75em;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .contact-text {
+        font-size: 2rem;
+        margin: 0 5px;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .links a {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact-text {
+        font-size: 1.5rem;
+        margin: 0 5px;
+    }
+
+    .header {
+        font-size: 1.25em;
+    }
+
+    .email {
+        font-size: 0.9em;
+    }
+
+    .links a {
+        margin: 0 5px;
+    }
+
+    .linkedin-icon,
+    .github-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
