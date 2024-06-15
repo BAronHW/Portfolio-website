@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* { 
+* {
   font-family: "Poppins", sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   color: #fff;
-  /* background-color: #060417; */
   background: linear-gradient(34deg, #441273, #051e4b 21%, #344f8d 58%, #6a89df 80%, #91e3e2 99%);
 }
 
-
-button{
+button {
   text-decoration: none;
 }
 
-a{
+a {
   color: #fff;
   text-decoration: none;
 }
+
 ::-webkit-scrollbar {
   width: 12px;
   background-color: gainsboro;
@@ -33,45 +32,61 @@ a{
   background-clip: padding-box;
 }
 
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.project-container{
+.project-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
-.footer{
+.footer {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  /* opacity: 20px; */
   padding: 2rem;
   margin: 0;
-
 }
 
-.project-container{
+.project-container {
   display: flex;
   flex-direction: column;
 }
 
-.project-cards-container{
+.project-cards-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.portfolio-h2{
-  font-size: 5rem;
+.portfolio-h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-@media (max-width: 425px){
-  .project-cards-container{
+@media (max-width: 768px) {
+  .portfolio-h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .project-cards-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .portfolio-h2 {
+    font-size: 2rem;
   }
 }

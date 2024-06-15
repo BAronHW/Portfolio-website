@@ -1,206 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(34deg, #441273, #051e4b 21%, #344f8d 58%, #6a89df 80%, #91e3e2 99%);
+}
+
+button {
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: gainsboro;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  padding: 2rem;
+  margin: 0;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .project-cards-container {
+    flex-direction: column;
+  }
+
+  .portfolio-h2 {
+    font-size: 2rem;
+  }
+}
+
 .hero-img img {
-    width: 100px;
+  width: 100px;
 }
 
 #duck-icon {
-    width: 700px;
+  width: 700px;
 }
 
 .hero-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    margin: 0;
-    padding: 15vh 0 20vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  padding: 15vh 0 20vh;
 }
 
 .hero-img {
-    display: flex;
-    flex-direction: row;
-    gap: calc(100vw / 20);
+  display: flex;
+  flex-direction: row;
+  gap: calc(100vw / 20);
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    padding: 10rem;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 h2 {
-    display: flex;
-    margin-bottom: 2rem; /* Add margin to create a gap below the title */
+  display: flex;
+  margin-bottom: 2rem; /* Add margin to create a gap below the title */
 }
 
 .header-about {
-    font-size: 3rem;
-    position: relative;
-    display: inline-block;  /* Ensures the pseudo-element aligns correctly under the text */
-    margin-top: 3rem; /* Add margin to create a gap above the about section */
+  font-size: 3rem;
+  position: relative;
+  display: inline-block;  /* Ensures the pseudo-element aligns correctly under the text */
+  margin-top: 3rem; /* Add margin to create a gap above the about section */
 }
 
 .header-about::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10px; /* Adjust this value as needed to position the underline */
-    height: 2px; /* Thickness of the underline */
-    background: linear-gradient(45deg, #e100ff, #f5aa95, #fad0c4);
-    display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px; /* Adjust this value as needed to position the underline */
+  height: 2px; /* Thickness of the underline */
+  background: linear-gradient(45deg, #e100ff, #f5aa95, #fad0c4);
+  display: block;
 }
 
 .tech-tools-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center items horizontally */
-    gap: 2rem; /* Gap between items */
-    padding: 2rem;
-    max-width: 1200px; /* Ensure it doesn't stick out */
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items horizontally */
+  gap: 2rem; /* Gap between items */
+  padding: 2rem;
+  max-width: 1200px; /* Ensure it doesn't stick out */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tech-header, p {
-    display: flex;
+  display: flex;
 }
 
 .tech-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
 }
 
 svg {
-    transition: 250ms;
+  transition: 250ms;
+  width: 100px;
+  height: 100px;
 }
 
 .react-icon:hover, .html-icon:hover, .css-icon:hover, .js-icon:hover,
 .node-icon:hover, .java-icon:hover, .figma-icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.react-icon:hover{
-    fill:#ADD8E6;
-    transform: scale(1.1,1.1);
+.react-icon:hover {
+  fill: #ADD8E6;
 }
 
-.html-icon:hover{
-    fill:#F14A29;
-    transform: scale(1.1,1.1);
+.html-icon:hover {
+  fill: #F14A29;
 }
 
-.css-icon:hover{
-    fill: rgba(59, 130, 246, .5);
-    transform: scale(1.1,1.1);
+.css-icon:hover {
+  fill: rgba(59, 130, 246, .5);
 }
 
-.js-icon:hover{
-    fill: rgb(255, 230, 0);
-    transform: scale(1.1,1.1);
+.js-icon:hover {
+  fill: rgb(255, 230, 0);
 }
 
-.node-icon:hover{
-    fill: rgb(145, 255, 0);
-    transform: scale(1.1,1.1);
+.node-icon:hover {
+  fill: rgb(145, 255, 0);
 }
 
-.java-icon:hover{
-    fill:#F14A29;
-    transform: scale(1.1,1.1);
+.java-icon:hover {
+  fill: #F14A29;
 }
 
-.figma-icon:hover{
-    fill:#a91deb;
-    transform: scale(1.1,1.1);
+.figma-icon:hover {
+  fill: #a91deb;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 1325px) {
-    .hero-container, .hero-content {
-        padding: 5rem 0;
-    }
+  .hero-container, .hero-content {
+    padding: 5rem 0;
+  }
+
+  .tech-icon {
+    max-width: 120px;
+  }
+
+  svg {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 769px) {
-    .hero-container, .hero-content {
-        padding: 3rem 0;
-    }
+  .hero-container, .hero-content {
+    padding: 3rem 0;
+  }
 
-    .hero-content p {
-        padding: 0;
-    }
+  .hero-content p {
+    padding: 0;
+  }
 
-    .header-about {
-        font-size: 2.5rem;
-        margin-top: 2rem; /* Adjust margin for smaller screens */
-    }
+  .header-about {
+    font-size: 2.5rem;
+    margin-top: 2rem; /* Adjust margin for smaller screens */
+  }
 
-    h2 {
-        margin-bottom: 1.5rem; /* Adjust margin for smaller screens */
-    }
+  h2 {
+    margin-bottom: 1.5rem; /* Adjust margin for smaller screens */
+  }
 
-    .tech-tools-container {
-        padding: 1rem;
-        gap: 1rem;
-    }
+  .tech-tools-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
 
-    .hero-img{
-        gap: 0.5rem;
-    }
+  .hero-img {
+    gap: 0.5rem;
+  }
 
-    .tech-icon {
-        max-width: 100px;
-        text-align: center;
-    }
+  .tech-icon {
+    max-width: 100px;
+  }
+
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+  .tech-icon p{
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
-    .hero-container, .hero-content, .tech-tools-container {
-        padding: 1rem 0;
-    }
+  .hero-container, .hero-content, .tech-tools-container {
+    padding: 1rem 0;
+  }
 
-    .hero-content {
-        padding: 2rem;
-        gap: 1rem;
-    }
+  .hero-content {
+    padding: 2rem;
+    gap: 1rem;
+  }
 
-    .header-about {
-        font-size: 2rem;
-        margin-top: 1.5rem; /* Adjust margin for smaller screens */
-    }
+  .header-about {
+    font-size: 2rem;
+    margin-top: 1.5rem; /* Adjust margin for smaller screens */
+  }
 
-    h2 {
-        margin-bottom: 1rem; /* Adjust margin for smaller screens */
-    }
+  h2 {
+    margin-bottom: 1rem; /* Adjust margin for smaller screens */
+  }
 
-    .hero-img img, #duck-icon {
-        width: 80px; /* Adjust as needed for smaller screens */
-    }
+  .hero-img img, #duck-icon {
+    width: 80px; /* Adjust as needed for smaller screens */
+  }
 
-    svg {
-        max-width: 30px; /* Adjust the icon sizes for smaller screens */
-        max-height: 30px;
-    }
+  svg {
+    width: 40px;
+    height: 40px;
+  }
 
-    .hero-img {
-        gap: 0.5;
-    }
+  .hero-img {
+    gap: 0.5;
+  }
 
-    .tech-tools-container {
-        padding: 1rem;
-        gap: 1rem;
-        max-width: 100%; /* Ensure it doesn't stick out */
-    }
+  .tech-tools-container {
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 100%; /* Ensure it doesn't stick out */
+  }
 
-    .tech-icon {
-        max-width: 80px;
-        text-align: center;
-    }
+  .tech-icon {
+    max-width: 80px;
+  }
 
-    .tech-icon p{
-        display: none;
-    }
+  .tech-icon p {
+    display: none;
+  }
 }
