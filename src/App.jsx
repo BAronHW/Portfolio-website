@@ -46,7 +46,7 @@ const App = () => {
         <h2 className='portfolio-h2'>Portfolio</h2>
         <div className='project-cards-container'>
           <Projects projectImg={genetic} projectTitle={"Genetic Algorithm Pathfinding"} projectDesc={"Engineered an efficient pathfinding solution in MATLAB, while dynamically avoiding obstacles using a ge-netic algorithm. Skillfully implemented selection, crossover, and mutation strategies in the genetic algo-rithm, integrating penalty functions for obstacle avoidance."}></Projects>
-          <Projects projectImg={library} projectTitle={"Home Library Application"} projectDesc={"Created a home library web-app that allows for books details to be stored. The web-app also renders book data that is stored in cache so that after closing the web-page the correct information is still displayed"}></Projects>
+          <Projects projectImg={library} projectTitle={"E-commerce Website"} projectDesc={"Created an E-commerce website using React.js while fetching data from an API and dynamically displaying the data on the front-end"}></Projects>
           <Projects projectImg={port} projectTitle={"Portfolio Website"} projectDesc={"Designed and created this portfolio website using a tech-stack of react.js and css to demonstrate skills with react and proficiency at utilizing moern technologies to create an engaging end product"}></Projects>
           <Projects projectImg={network} projectTitle={"Re-creatng Ping and Traceroute"} projectDesc={"Completed a project focused on socket programming, utilizing the socket module to recreate classic networking tools such as Ping and Traceroute"}></Projects>
         </div>
